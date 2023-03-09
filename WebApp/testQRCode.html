@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="https://www.qr-code-generator.com/" xml:lang="it" lang="it">
+<head>
+    <title> QRCode generator </title>
+    <script type="text/javascript" src="QrCodemaker.js"></script>
+    <script type="text/javascript" src="QrCodemaker.js"></script>
+</head>
+<body>
+    <input id="text" type="text" value="" style="width:80%" /><br />
+    <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+
+<script type="text/javascript">//test per la creazione di qrcode
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: "https://localhost:7777/testQRCode.html",
+	width: 128,
+	height: 128,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
+</script>
+
+</body>
