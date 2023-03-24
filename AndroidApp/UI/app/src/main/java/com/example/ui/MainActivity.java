@@ -20,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
     private void checkAndroidPermissions() {
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.INTERNET) +
                 ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_NETWORK_STATE) +
