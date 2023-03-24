@@ -7,9 +7,7 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.view.animation.Animation;
-import android.view.animation.Transformation;
-import android.widget.ProgressBar;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
                     Manifest.permission.CAMERA};
             int idPermissionRequest = 1;
             ActivityCompat.requestPermissions(this, permissions, idPermissionRequest);
+        } else {
+            Toast.makeText(MainActivity.this, "Permission already granted", Toast.LENGTH_SHORT).show();
         }
     }
 }
