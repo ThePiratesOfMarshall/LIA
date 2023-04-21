@@ -59,6 +59,6 @@ public class activity_on_start extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_activity_on_start, container, false);
+        return inflater.inflate(R.layout.fragment_initial_on_start, container, false);
     }
 }

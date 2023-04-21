@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
+    android:id="@+id/nav_graph.xml"
     app:startDestination="@id/initial_on_start">
+
     <fragment
         android:id="@+id/initial_on_start"
         android:name="com.example.ui.initial_on_start"
         android:label="fragment_initial_on_start"
-        tools:layout="@layout/fragment_initial_on_start" />
+        tools:layout="@layout/fragment_initial_on_start" >
+        <action
+            android:id="@+id/action_initial_on_start_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.ui.MainActivity"
+        android:label="activity_on_create"
+        tools:layout="@layout/activity_on_create" />
 </navigation>
