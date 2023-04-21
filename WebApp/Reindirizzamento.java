@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-class Reidirizzamento{
+class Reinjdirizzamento{
     public static ArrayList<ParaQr> elenco = new ArrayList<ParaQr>();
 
     public static void carica(){
