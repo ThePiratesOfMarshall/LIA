@@ -49,7 +49,7 @@
 1. <a name="_1fob9te"></a>**scopo e campo di applicazione**
    1. ## <a name="_3znysh7"></a>**Scopo**
 Realizzazione di un applicativo Android e Web al fine di creare giochi di luce attraverso l’utilizzo degli smartphone degli utenti partecipanti all’evento.
-1. ## <a name="_2et92p0"></a>**Campo di applicazione**
+2. ## <a name="_2et92p0"></a>**Campo di applicazione**
 Il progetto è stato avviato per la progettazione di un applicativo Android e Web per la gestione di giochi di luci tramite i dispositivi mobili, all’interno di determinati eventi. 
 
 Il campo di applicazione è completamente ludico ai fini di intrattenimento e a scopo non lucrativo.
@@ -85,7 +85,7 @@ I problemi principali sono sorti a seguito della fase di creazione delle feature
 
 Eventuali limiti risiedono nell’incapacità di gestire eventi che vedano la partecipazione di un numero elevato di utenti, questo perché potrebbero esserci dei rallentamenti sul traffico da e verso il server. 
 
-3. <a name="_4d34og8"></a>**Fornitura**
+4. <a name="_4d34og8"></a>**Fornitura**
 
 Come prima cosa sono state discusse le tecnologie da utilizzare. Di seguito l’elenco e il loro utilizzo: 
 
@@ -102,7 +102,7 @@ vi sia un organizzatore che, una volta eseguito l’accesso all’applicazione w
 
 
 
-3. <a name="_2s8eyo1"></a>**Work Break Down Structure**
+5. <a name="_2s8eyo1"></a>**Work Break Down Structure**
 
 Epica: applicazione android per la visualizzazione di una timeline di effetti visivi
 
@@ -150,7 +150,7 @@ L’unità di misura del tempo usata è il pomodoro (corrispondente a 25 minuti)
 
 Coloro che hanno proposto i valori più alti e più bassi di pomodori hanno espresso la motivazione della scelta.
 
-6. <a name="_3rdcrjn"></a>**Earned Value e Burn Down Chart**
+7. <a name="_3rdcrjn"></a>**Earned Value e Burn Down Chart**
 
 Preparare grafici e tabelle utili alla dirigenza, che saranno aggiornati durante le riunioni periodiche, per capire lo stato di salute del progetto.
 **Uso interno ITIS Cuneo**                                             		Pagina /
