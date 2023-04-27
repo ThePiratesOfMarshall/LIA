@@ -1,0 +1,23 @@
+nav {
+    z-index: 1;
+}
+
+.container_all {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.card_download, .card_login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: fit-content;
+}
+
+.wrapper_login {
+    position: relative;
+    top: 8vh;
+}
