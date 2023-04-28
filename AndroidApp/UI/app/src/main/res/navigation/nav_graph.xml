@@ -2,21 +2,27 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph.xml"
-    app:startDestination="@id/initial_on_start">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
 
     <fragment
-        android:id="@+id/initial_on_start"
-        android:name="com.example.ui.initial_on_start"
-        android:label="fragment_initial_on_start"
-        tools:layout="@layout/fragment_initial_on_start" >
+        android:id="@+id/FirstFragment"
+        android:name="com.example.ui.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
         <action
-            android:id="@+id/action_initial_on_start_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
     </fragment>
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.ui.MainActivity"
-        android:label="activity_on_create"
-        tools:layout="@layout/activity_on_create" />
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.ui.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
 </navigation>
