@@ -1,4 +1,4 @@
-public class ParaQr{
+public class ParameterQr{
     String codice = null;
     private String link = null;
 

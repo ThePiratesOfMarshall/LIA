@@ -1,3 +1,4 @@
+
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
 import com.mongodb.MongoException;
@@ -8,20 +9,24 @@ import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
-public class Main {
+public class MongoConnectionTest {
     public static void main(String[] args) {
-        String connectionString = "mongodb+srv://aleesandromoriondo:<password>@lia.hvtxril.mongodb.net/?retryWrites=true&w=majority";
+        // stringa di connessione al db
+        String connectionString = "mongodb+srv://thepiratesofmarshall:%40LIA2023@liacluster.lxthbsb.mongodb.net/test";
+
         ServerApi serverApi = ServerApi.builder()
                 .version(ServerApiVersion.V1)
-                .build())
+                .build();
+
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(new ConnectionString(connectionString))
                 .serverApi(serverApi)
                 .build();
-        // Create a new client and connect to the server
+
+        // Creazione nuovo client e collegamento con il senver
         try (MongoClient mongoClient = MongoClients.create(settings)) {
             try {
-                // Send a ping to confirm a successful connection
+                // test di conferma avvenimento del ping
                 MongoDatabase database = mongoClient.getDatabase("admin");
                 database.runCommand(new Document("ping", 1));
                 System.out.println("Pinged your deployment. You successfully connected to MongoDB!");
