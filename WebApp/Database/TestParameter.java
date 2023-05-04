@@ -14,7 +14,7 @@ class TestParameter{
         qr.setLink(link);
         System.out.println(link);
         
-        //scorro tutta la tabella fin quando il codice meccia
+        //scorro tutta la tabella per trovare la corrispondenza
         for(ParameterQr indice : elenco){
             if(qr.codice == indice.getCodice()){
                 System.out.println("corrispondenza trovata");
