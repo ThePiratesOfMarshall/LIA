@@ -11,12 +11,12 @@
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
         <action
-            android:id="@+id/action_FirstFragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_FirstFragment_to_Home"
+            app:destination="@id/homepage" />
     </fragment>
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.ui.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.example.ui.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>
