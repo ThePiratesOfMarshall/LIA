@@ -6,9 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.fragment.app.Fragment;
 
 import com.example.ui.databinding.FragmentScanBinding;
+import com.google.common.util.concurrent.ListenableFuture;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,6 +29,7 @@ public class ScanFragment extends Fragment {
     private String mParam2;
 
     private FragmentScanBinding binding;
+    private ListenableFuture<ProcessCameraProvider> cameraProviderFuture;
 
     public ScanFragment() {
         // Required empty public constructor
@@ -57,6 +60,10 @@ public class ScanFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        cameraProviderFuture = ProcessCameraProvider.getInstance(this);
+    }
+
+    private void requestCamera() {
     }
 
     @Override
