@@ -11,12 +11,12 @@
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
         <action
-            android:id="@+id/action_FirstFragment_to_Home"
+            android:id="@+id/action_FirstFragment_to_ScanFragment"
             app:destination="@id/homepage" />
     </fragment>
     <fragment
         android:id="@+id/homepage"
         android:name="com.example.ui.Home"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_scan" />
 </navigation>
